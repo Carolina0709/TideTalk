@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TideTalk</title>
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="background-blue sticky-top ">
+        <nav class="navbar navbar-expand-md" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a href="#">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="./images/logo.png">
+                        <source media="(min-width: 769px)" srcset="./images/icon.png">
+                        <img class="w-100 img-logo" src="./images/logo.png" alt="Logo de TideTalk, icono de una ola">
+                    </picture>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link active fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Naturaleza
+                        </a>
+                        <ul class="dropdown-menu dropdown-styles">
+                          <li><a class="dropdown-item" href="#section_body">Cuerpo Humano</a></li>
+                          <li><a class="dropdown-item" href="#section_animals">Animales</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Cotidiano
+                        </a>
+                        <ul class="dropdown-menu dropdown-styles">
+                          <li><a class="dropdown-item" href="#section_home">Hogar</a></li>
+                          <li><a class="dropdown-item" href="#section_colors">Colores</a></li>
+                          <li><a class="dropdown-item" href="#section_food">Comida</a></li>
+                          <li><a class="dropdown-item" href="#section_clothes">Ropa</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle nav-link fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Académico
+                        </a>
+                        <ul class="dropdown-menu dropdown-styles">
+                          <li><a class="dropdown-item" href="#section_professions">Profesiones</a></li>
+                          <li><a class="dropdown-item" href="#section_school">Útiles escolares</a></li>
+                        </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex pb-2 pb-md-0">
+                    <button onclick="window.open('https://api.whatsapp.com/send?phone=+523787115423&text=Hola%20Carolina!%20Estoy%20visitando%20tu%20sitio%20web%20y%20me%20gustar%C3%ADa%20contactar%20contigo,%20%C2%BFEstas%20disponible?', '_blank')" class="btn px-4 btn-test" type="submit">CONTACTO </button>
+                  </form>
+                </div>
+              </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="background-blue min-height-100 d-md-flex justify-content-center align-items-center overflow-hidden">
+            <div class="container w-100 h-50 h-md-100 d-flex justify-content-center align-items-center px-md-5">
+                <div>
+                    <button class="key key_descWelcome btn btn-test mb-4 btn-belcome  "><i class="bi bi-soundwave"></i> WELCOME</button>
+                    <h2 class="fs-5 color-blue-middle mb-0">¡Ahoy Marinero!</h2>
+                    <h1 class="display-5 color-blue-light">¡Bienvenido a <span class="display-1 color-blue-middle">TideTalk!</span></h1>
+                    <p class="lead color-gray-light">Zarpa en una aventura de aprendizaje y preparate para navegar en olas de diversión</p>
+                    <button onclick="window.open('https://github.com/Carolina0709/TideTalk', '_blank')" class="btn px-5 py-2 btn-test mt-4">VISITA EL REPO</button>
+                </div>
+                
+            </div>
+            <div class="container w-100 h-50 h-md-100 d-flex justify-content-center align-items-center position-relative">
+                <img class="w-100 img-banner" src="./images/turtle.png" alt="Ilustración de tortuga animada nadando ">
+            </div>
+        </section>
+       
+        <div class="accordion background-blue-light py-5" id="accordionExample">
+            <div id="section_body" class="accordion-item background-blue-light border-0">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start order-md-2">
+                            <button class="key key_descBody btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Partes del cuerpo</h2>
+                            <p class="lead color-blue">En esta sección, navegamos junto a nuestra amiga, ¡Willy la Ballena Curiosa! Acompañanos mientras exploramos las diversas partes del cuerpo humano en inglés.</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center order-md-1">
+                            <img class="w-100 img-accordion" src="./images/whale.png" alt="Ilustración de ballena">
+                            <button class="btn btn-test border-0 align-self-end align-self-md-start mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseOne" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_bodyHead  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-head.png" alt="Ilustración del cuerpo humano, la cabeza">
+                            <h3 class="lead color-blue-light">HEAD</h3>
+                        </button>
+                        <button class="key key_bodyArm key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-arm.png" alt="Ilustración del cuerpo humano, el brazo">
+                            <h3 class="lead color-blue-light">ARM</h3>
+                        </button>
+                        <button class="key key_bodyEar key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-ear.png" alt="Ilustración del cuerpo humano, la oreja">
+                            <h3 class="lead color-blue-light">EAR</h3>
+                        </button>
+                        <button class="key key_bodyEye key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-eye.png" alt="Ilustración del cuerpo humano, rl ojo">
+                            <h3 class="lead color-blue-light">EYE</h3>
+                        </button>
+                        <button class="key key_bodyFoot key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-foot.png" alt="Ilustración del cuerpo humano, los pies">
+                            <h3 class="lead color-blue-light">FOOT</h3>
+                        </button>
+                        <button class="key key_bodyHand key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-hand.png" alt="Ilustración del cuerpo humano, la mano">
+                            <h3 class="lead color-blue-light">HAND</h3>
+                        </button>
+                        <button class="key key_bodyLeg key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-leg.png" alt="Ilustración del cuerpo humano, la pierna">
+                            <h3 class="lead color-blue-light">LEG</h3>
+                        </button>
+                        <button class="key key_bodyMouth key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-mouth.png" alt="Ilustración del cuerpo humano, la boca">
+                            <h3 class="lead color-blue-light">MOUTH</h3>
+                        </button>
+                        <button class="key key_bodyNose  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/body/body-nose.png" alt="Ilustración del cuerpo humano, la nariz">
+                            <h3 class="lead color-blue-light">NOSE</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="./audios/body/head.mp3" id="sound_key_bodyHead"></audio>
+                    <audio src="./audios/body/arm.mp3" id="sound_key_bodyArm"></audio>
+                    <audio src="./audios/body/ear.mp3" id="sound_key_bodyEar"></audio>
+                    <audio src="./audios/body/eye.mp3" id="sound_key_bodyEye"></audio>
+                    <audio src="./audios/body/foot.mp3" id="sound_key_bodyFoot"></audio>
+                    <audio src="./audios/body/hand.mp3" id="sound_key_bodyHand"></audio>
+                    <audio src="./audios/body/leg.mp3" id="sound_key_bodyLeg"></audio>
+                    <audio src="./audios/body/mouth.mp3" id="sound_key_bodyMouth"></audio>
+                    <audio src="./audios/body/nose.mp3" id="sound_key_bodyNose"></audio>
+                </div>
+            </div>
+           
+            <div id="section_animals" class="accordion-item background-blue-light border-0 pt-5 mt-5">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start">
+                            <button class="key key_descAnimals btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Animales</h2>
+                            <p class="lead color-blue">En esta sección, navegamos junto a nuestro amigo, ¡Sammy el Caballito Aventurero! Acompáñanos mientras conocemos a los diferentesanimales en inglés.</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img class="w-100 img-accordion" src="./images/seaHorse.png" alt="Ilustración de un caballito de mar">
+                            <button class="btn btn-test border-0 align-self-end mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseTwo" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_animalsCat key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-cat.png" alt="Ilustración de gato">
+                            <h3 class="lead color-blue-light">CAT</h3>
+                        </button>
+                        <button class="key key_animalsDog key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-dog.png" alt="Ilustración de dog">
+                            <h3 class="lead color-blue-light">DOG</h3>
+                        </button>
+                        <button class="key key_animalsElephant key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-elephant.png" alt="Ilustración de elephant">
+                            <h3 class="lead color-blue-light">ELEPHANT</h3>
+                        </button>
+                        <button class="key key_animalsGiraffe key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-giraffe.png" alt="Ilustración de giraffe">
+                            <h3 class="lead color-blue-light">GIRAFFE</h3>
+                        </button>
+                        <button class="key key_animalsHorse key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-horse.png" alt="Ilustración de caballo">
+                            <h3 class="lead color-blue-light">HORSE</h3>
+                        </button>
+                        <button class="key key_animalsMonkey key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-monkey.png" alt="Ilustración de mono">
+                            <h3 class="lead color-blue-light">MONKEY</h3>
+                        </button>
+                        <button class="key key_animalsPig key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-pig.png" alt="Ilustración de cerdo">
+                            <h3 class="lead color-blue-light">PIG</h3>
+                        </button>
+                        <button class="key key_animalsSheep  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-sheep.png" alt="Ilustración de oveja">
+                            <h3 class="lead color-blue-light">SHEEP</h3>
+                        </button>
+                        <button class="key key_animalsTiger  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/animals/animals-tiger.png" alt="Ilustración de tigre">
+                            <h3 class="lead color-blue-light">TIGER</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="./audios/animals/cat.mp3" id="sound_key_animalsCat"></audio>
+                    <audio src="./audios/animals/dog.mp3" id="sound_key_animalsDog"></audio>
+                    <audio src="./audios/animals/elephant.mp3" id="sound_key_animalsElephant"></audio>
+                    <audio src="./audios/animals/giraffe.mp3" id="sound_key_animalsGiraffe"></audio>
+                    <audio src="./audios/animals/horse.mp3" id="sound_key_animalsHorse"></audio>
+                    <audio src="./audios/animals/monkey.mp3" id="sound_key_animalsMonkey"></audio>
+                    <audio src="./audios/animals/pig.mp3" id="sound_key_animalsPig"></audio>
+                    <audio src="./audios/animals/sheep.mp3" id="sound_key_animalsSheep"></audio>
+                    <audio src="./audios/animals/tiger.mp3" id="sound_key_animalsTiger"></audio>
+                </div>
+            </div>
+           
+    
+            <div id="section_home" class="accordion-item background-blue-light border-0 pt-5 mt-5">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start order-md-2">
+                            <button class="key key_descHome btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Hogar</h2>
+                            <p class="lead color-blue">En esta sección, navegamos junto a nuestra amiga, ¡Olivia la Loba de mar! Acompáñanos mientras exploramos las diversas partes del hogar en inglés.</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center order-md-1">
+                            <img class="w-100 img-accordion" src="./images/seaWolf.png" alt="Ilustración de un lobo de mar">
+                            <button class="btn btn-test border-0 align-self-end align-self-md-start mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseThree" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_homeBathroom  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-bathroom.png" alt="Ilustración de baño">
+                            <h3 class="lead color-blue-light fs-6">BATHROOM</h3>
+                        </button>
+                        <button class="key key_homeBedroom  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-bedroom.png" alt="Ilustración de recamara">
+                            <h3 class="lead color-blue-light">BEDROOM</h3>
+                        </button>
+                        <button class="key key_homeChimney  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-chimney.png" alt="Ilustración de chimenea">
+                            <h3 class="lead color-blue-light">CHIMNEY</h3>
+                        </button>
+                        <button class="key key_homeDiningroom  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-diningRoom.png" alt="Ilustración de comedor">
+                            <h3 class="lead color-blue-light font-small">DININGROOM</h3>
+                        </button>
+                        <button class="key key_homeDoor  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-door.png" alt="Ilustración de puerta">
+                            <h3 class="lead color-blue-light">DOOR</h3>
+                        </button>
+                        <button class="key key_homeGarage  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-garage.png" alt="Ilustración de cochera">
+                            <h3 class="lead color-blue-light">GARAGE</h3>
+                        </button>
+                        <button class="key key_homeHouse  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-house.png" alt="Ilustración de casa">
+                            <h3 class="lead color-blue-light">HOUSE</h3>
+                        </button>
+                        <button class="key key_homeLivingroom  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-livingRoom.png" alt="Ilustración de sala">
+                            <h3 class="lead color-blue-light font-small">LIVINGROOM</h3>
+                        </button>
+                        <button class="key key_homeWindow  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/home/home-window.png" alt="Ilustración de ventana">
+                            <h3 class="lead color-blue-light">WINDOW</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="./audios/home/bathroom.mp3" id="sound_key_homeBathroom"></audio>
+                    <audio src="./audios/home/bedroom.mp3" id="sound_key_homeBedroom"></audio>
+                    <audio src="./audios/home/chimney.mp3" id="sound_key_homeChimney"></audio>
+                    <audio src="./audios/home/dining.mp3" id="sound_key_homeDiningroom"></audio>
+                    <audio src="./audios/home/door.mp3" id="sound_key_homeDoor"></audio>
+                    <audio src="./audios/home/garage.mp3" id="sound_key_homeGarage"></audio>
+                    <audio src="./audios/home/house.mp3" id="sound_key_homeHouse"></audio>
+                    <audio src="./audios/home/livingroom.mp3" id="sound_key_homeLivingroom"></audio>
+                    <audio src="./audios/home/window.mp3" id="sound_key_homeWindow"></audio>
+                </div>
+            </div>
+            
+     
+            <div id="section_colors" class="accordion-item background-blue-light border-0 pt-5 mt-5">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start">
+                            <button class="key key_descColors btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Colores</h2>
+                            <p class="lead color-blue">En esta sección, nadamos junto a nuestro amigo, ¡Dennis el Delfín Explorador! Acompáñanos mientras exploramos los diferentes colores en inglés</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img class="w-100 img-accordion" src="./images/dolphin.png" alt="Ilustración de un delfin">
+                            <button class="btn btn-test border-0 align-self-end mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseFour" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_colorsBlack  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-black.png" alt="Ilustración de color negro">
+                            <h3 class="lead color-blue-light">BLACK</h3>
+                        </button>
+                        <button class="key key_colorsBrown  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-brown.png" alt="Ilustración de color cafe">
+                            <h3 class="lead color-blue-light">BROWN</h3>
+                        </button>
+                        <button class="key key_colorsGray  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-gray.png" alt="Ilustración de color gris">
+                            <h3 class="lead color-blue-light">GRAY</h3>
+                        </button>
+                        <button class="key key_colorsGreen  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-green.png" alt="Ilustración de color verde">
+                            <h3 class="lead color-blue-light">GREEN</h3>
+                        </button>
+                        <button class="key key_colorsOrange  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-orange.png" alt="Ilustración de color naranja">
+                            <h3 class="lead color-blue-light">ORANGE</h3>
+                        </button>
+                        <button class="key key_colorsPink  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-pink.png" alt="Ilustración de color rosa">
+                            <h3 class="lead color-blue-light">PINK</h3>
+                        </button>
+                        <button class="key key_colorsPurple  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-purple.png" alt="Ilustración de color morado">
+                            <h3 class="lead color-blue-light">PURPLE</h3>
+                        </button>
+                        <button class="key key_colorsRed  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-red.png" alt="Ilustración de color rojo">
+                            <h3 class="lead color-blue-light">RED</h3>
+                        </button>
+                        <button class="key key_colorsYellow  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/colors/colors-yellow.png" alt="Ilustración de color amarillo">
+                            <h3 class="lead color-blue-light">YELLOW</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="./audios/colors/black.mp3" id="sound_key_colorsBlack"></audio>
+                    <audio src="./audios/colors/brown.mp3" id="sound_key_colorsBrown"></audio>
+                    <audio src="./audios/colors/gray.mp3" id="sound_key_colorsGray"></audio>
+                    <audio src="./audios/colors/green.mp3" id="sound_key_colorsGreen"></audio>
+                    <audio src="./audios/colors/orange.mp3" id="sound_key_colorsOrange"></audio>
+                    <audio src="./audios/colors/pink.mp3" id="sound_key_colorsPink"></audio>
+                    <audio src="./audios/colors/purple.mp3" id="sound_key_colorsPurple"></audio>
+                    <audio src="./audios/colors/red.mp3" id="sound_key_colorsRed"></audio>
+                    <audio src="./audios/colors/yellow.mp3" id="sound_key_colorsYellow"></audio>
+                </div>
+            </div>
+    
+    
+            <div id="section_food" class="accordion-item background-blue-light border-0 pt-5 mt-5">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start order-md-2">
+                            <button class="key key_descFood btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Comida</h2>
+                            <p class="lead color-blue">En esta sección, brillamos junto a nuestra amiga, ¡Stella la Estrella de la Comida! Acompáñanos mientras exploramos diferentes tipos de alimentos en inglés.</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center order-md-1">
+                            <img class="w-100 img-accordion" src="./images/starfish.png" alt="Ilustración de una estrella de mar">
+                            <button class="btn btn-test border-0 align-self-end align-self-md-start mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseFive" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_foodBacon  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-bacon.png" alt="Ilustración de tocino">
+                            <h3 class="lead color-blue-light fs-6">BACON</h3>
+                        </button>
+                        <button class="key key_foodBeef  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-beef.png" alt="Ilustración de carne de res">
+                            <h3 class="lead color-blue-light">BEEF</h3>
+                        </button>
+                        <button class="key key_foodBread  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-bread.png" alt="Ilustración de pan">
+                            <h3 class="lead color-blue-light">BREAD</h3>
+                        </button>
+                        <button class="key key_foodButter  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-butter.png" alt="Ilustración de mantequilla">
+                            <h3 class="lead color-blue-light">BUTTER</h3>
+                        </button>
+                        <button class="key key_foodCheese  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-cheese.png" alt="Ilustración de queso">
+                            <h3 class="lead color-blue-light">CHEESE</h3>
+                        </button>
+                        <button class="key key_foodChicken  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-chicken.png" alt="Ilustración de pollo">
+                            <h3 class="lead color-blue-light">CHICKEN</h3>
+                        </button>
+                        <button class="key key_foodEggs  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-egg.png" alt="Ilustración de huevos">
+                            <h3 class="lead color-blue-light">EGGS</h3>
+                        </button>
+                        <button class="key key_foodJam  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-jam.png" alt="Ilustración de mermelada">
+                            <h3 class="lead color-blue-light">JAM</h3>
+                        </button>
+                        <button class="key key_foodRice  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/food/food-rice.png" alt="Ilustración de arroz">
+                            <h3 class="lead color-blue-light">RICE</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="/audios/food/bacon.mp3 " id="sound_key_foodBacon"></audio>
+                    <audio src="/audios/food/beef.mp3 " id="sound_key_foodBeef"></audio>
+                    <audio src="/audios/food/bread.mp3 " id="sound_key_foodBread"></audio>
+                    <audio src="/audios/food/butter.mp3 " id="sound_key_foodButter"></audio>
+                    <audio src="/audios/food/cheese.mp3 " id="sound_key_foodCheese"></audio>
+                    <audio src="/audios/food/chicken.mp3 " id="sound_key_foodChicken"></audio>
+                    <audio src="/audios/food/eggs.mp3 " id="sound_key_foodEggs"></audio>
+                    <audio src="/audios/food/jam.mp3 " id="sound_key_foodJam"></audio>
+                    <audio src="/audios/food/rice.mp3" id="sound_key_foodRice"></audio>
+                </div>
+            </div>
+    
+    
+            <div id="section_clothes" class="accordion-item background-blue-light border-0 pt-5 mt-5">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start">
+                            <button class="key key_descClothes btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Ropa</h2>
+                            <p class="lead color-blue">En esta sección, desfilamos junto a nuestra amiga, ¡Marla la Mantarraya de la Moda! Acompáñanos mientras exploramos diferentes tipos de ropa en inglés</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center ">
+                            <img class="w-100 img-accordion" src="./images/stingray.png" alt="Ilustración de una mantaraya">
+                            <button class="btn btn-test border-0 align-self-end mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseSix" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_clothesCap  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-cap.png" alt="Ilustración de una cachucha">
+                            <h3 class="lead color-blue-light">CAP</h3>
+                        </button>
+                        <button class="key key_clothesCoat  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-coat.png" alt="Ilustración de un abrigo">
+                            <h3 class="lead color-blue-light">COAT</h3>
+                        </button>
+                        <button class="key key_clothesDress  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-dress.png" alt="Ilustración de un vestido">
+                            <h3 class="lead color-blue-light">DRESS</h3>
+                        </button>
+                        <button class="key key_clothesJacket  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-jacket.png" alt="Ilustración de una chamarra">
+                            <h3 class="lead color-blue-light">JACKET</h3>
+                        </button>
+                        <button class="key key_clothesPants  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-pants.png" alt="Ilustración de unos pantalones">
+                            <h3 class="lead color-blue-light">PANTS</h3>
+                        </button>
+                        <button class="key key_clothesShirt  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-shirt.png" alt="Ilustración de una camisa">
+                            <h3 class="lead color-blue-light">SHIRT</h3>
+                        </button>
+                        <button class="key key_clothesShort  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-short.png" alt="Ilustración de un short">
+                            <h3 class="lead color-blue-light">SHORT</h3>
+                        </button>
+                        <button class="key key_clothesSocks  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-socks.png" alt="Ilustración de unos calcetines">
+                            <h3 class="lead color-blue-light">SOCKS</h3>
+                        </button>
+                        <button class="key key_clothesTie  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/clothes/clothes-tie.png" alt="Ilustración de una corbata">
+                            <h3 class="lead color-blue-light">TIE</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="/audios/clothes/cap.mp3" id="sound_key_clothesCap"></audio>
+                    <audio src="/audios/clothes/coat.mp3" id="sound_key_clothesCoat"></audio>
+                    <audio src="/audios/clothes/dress.mp3" id="sound_key_clothesDress"></audio>
+                    <audio src="/audios/clothes/jacket.mp3" id="sound_key_clothesJacket"></audio>
+                    <audio src="/audios/clothes/pants.mp3" id="sound_key_clothesPants"></audio>
+                    <audio src="/audios/clothes/shirt.mp3" id="sound_key_clothesShirt"></audio>
+                    <audio src="/audios/clothes/short.mp3" id="sound_key_clothesShort"></audio>
+                    <audio src="/audios/clothes/socks.mp3" id="sound_key_clothesSocks"></audio>
+                    <audio src="/audios/clothes/tie.mp3" id="sound_key_clothesTie"></audio>
+                </div>
+            </div>
+    
+    
+            <div id="section_professions" class="accordion-item background-blue-light border-0 pt-5 mt-5">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start order-md-2">
+                            <button class="key key_descProfessions btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Profesiones</h2>
+                            <p class="lead color-blue">En esta sección, zarpamos junto a nuestro amigo, ¡Terry el Tiburón Profesional! Acompáñanos mientras exploramos diferentes profesiones en inglés.</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center order-md-1">
+                            <img class="w-100 img-accordion" src="./images/shark.png" alt="Ilustración de tiburon">
+                            <button class="btn btn-test border-0 align-self-end align-self-md-start mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseSeven" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_professionsBaker  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-baker.png" alt="Ilustración de un panadero">
+                            <h3 class="lead color-blue-light fs-6">BAKER</h3>
+                        </button>
+                        <button class="key key_professionsBusinessman  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-businessman.png" alt="Ilustración de hombre de negocios">
+                            <h3 class="lead color-blue-light font-small">BUSINESSMAN</h3>
+                        </button>
+                        <button class="key key_professionsCarpinter  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-carpinter.png" alt="Ilustración de un carpintero">
+                            <h3 class="lead color-blue-light fs-6">CARPINTER</h3>
+                        </button>
+                        <button class="key key_professionsChef  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-chef.png" alt="Ilustración de un cocinero">
+                            <h3 class="lead color-blue-light font-small">CHEF</h3>
+                        </button>
+                        <button class="key key_professionsDoctor  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-doctor.png" alt="Ilustración de un doctor ">
+                            <h3 class="lead color-blue-light">DOCTOR</h3>
+                        </button>
+                        <button class="key key_professionsFireman  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-fireman.png" alt="Ilustración de un bombero">
+                            <h3 class="lead color-blue-light fs-6">FIREMAN</h3>
+                        </button>
+                        <button class="key key_professionsMechanic  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-mechanic.png" alt="Ilustración de un mecánico">
+                            <h3 class="lead color-blue-light fs-6">MECHANIC</h3>
+                        </button>
+                        <button class="key key_professionsPoliceman  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-policeman.png" alt="Ilustración de un policia">
+                            <h3 class="lead color-blue-light font-small">POLICEMAN</h3>
+                        </button>
+                        <button class="key key_professionsTeacher  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/professions/professions-teacher.png" alt="Ilustración de una maestra">
+                            <h3 class="lead color-blue-light">TEACHER</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="/audios/professions/baker.mp3" id="sound_key_professionsBaker"></audio>
+                    <audio src="/audios/professions/businessman.mp3" id="sound_key_professionsBusinessman"></audio>
+                    <audio src="/audios/professions/carpinter.mp3" id="sound_key_professionsCarpinter"></audio>
+                    <audio src="/audios/professions/chef.mp3" id="sound_key_professionsChef"></audio>
+                    <audio src="/audios/professions/doctor.mp3" id="sound_key_professionsDoctor"></audio>
+                    <audio src="/audios/professions/fireman.mp3" id="sound_key_professionsFireman"></audio>
+                    <audio src="/audios/professions/mechanic.mp3" id="sound_key_professionsMechanic"></audio>
+                    <audio src="/audios/professions/policeman.mp3" id="sound_key_professionsPoliceman"></audio>
+                    <audio src="/audios/professions/teacher.mp3" id="sound_key_professionsTeacher"></audio>
+                </div>
+            </div>
+    
+    
+            <div id="section_school" class="accordion-item background-blue-light border-0 pt-5 mt-5">
+                <div class="container accordion-header ">
+                    <div class="d-md-flex">
+                        <div class="w-100 d-flex flex-column justify-content-center align-items-start">
+                            <button class="key key_descSchool btn btn-test btn-belcome mb-4 "><i class="bi bi-soundwave"></i> DESCRIPTION</button>
+                            <h2 class="display-5 color-blue-middle">Útiles escolares</h2>
+                            <p class="lead color-blue">En esta sección, estudiamos junto a nuestro amigo, ¡Puffy el Pez Globo Escolar! Acompáñanos mientras exploramos diferentes útiles escolares en inglés.</p>
+                        </div>
+                        <div class="w-100 h-100 d-flex flex-column justify-content-center align-items-center">
+                            <img class="w-100 img-accordion" src="./images/fish.png" alt="Ilustración de un pez globo">
+                            <button class="btn btn-test border-0 align-self-end mb-4 btn-animated" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseOne">
+                                <i class="bi bi-chevron-double-up fs-4"></i>
+                                <i class="bi bi-chevron-double-down fs-4 "></i>
+                            </button>
+                        </div>
+                    </div> 
+                </div>
+              <div id="collapseEight" class="container accordion-collapse collapse background-blue" data-bs-parent="#accordionExample">
+                    <div class="container accordion-body d-flex flex-wrap justify-content-center align-items-center gap-4 py-5">
+                        <button class="key key_schoolBackpack  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-backpack.png" alt="Ilustración de una mochila">
+                            <h3 class="lead color-blue-light fs-6">BACKPACK</h3>
+                        </button>
+                        <button class="key key_schoolBooks  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-books.png" alt="Ilustración de unos libros">
+                            <h3 class="lead color-blue-light">BOOKS</h3>
+                        </button>
+                        <button class="key key_schoolCase  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-case.png" alt="Ilustración de un estuche">
+                            <h3 class="lead color-blue-light">CASE</h3>
+                        </button>
+                        <button class="key key_schoolEraser  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-eraser.png" alt="Ilustración de una goma de borrar">
+                            <h3 class="lead color-blue-light">ERASER</h3>
+                        </button>
+                        <button class="key key_schoolNotebook  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-notebook.png" alt="Ilustración de un cuaderno">
+                            <h3 class="lead color-blue-light fs-6">NOTEBOOK</h3>
+                        </button>
+                        <button class="key key_schoolPencil  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-pencil.png" alt="Ilustración de un lápiz">
+                            <h3 class="lead color-blue-light">PENCIL</h3>
+                        </button>
+                        <button class="key key_schoolPens  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-pens.png" alt="Ilustración de unas lapiceras">
+                            <h3 class="lead color-blue-light">PENS</h3>
+                        </button>
+                        <button class="key key_schoolRules  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-rules.png" alt="Ilustración de unas reglas">
+                            <h3 class="lead color-blue-light">RULES</h3>
+                        </button>
+                        <button class="key key_schoolScissors  key-button rounded background-blue-middle border-0">
+                            <img class="w-100" src="./images/school/school-scissors.png" alt="Ilustración de unas tijeras">
+                            <h3 class="lead color-blue-light fs-6">SCISSORS</h3>
+                        </button>
+                     
+                    </div>
+                    <audio src="./audios/school/backpack.mp3 " id="sound_key_schoolBackpack"></audio>
+                    <audio src="./audios/school/books.mp3 " id="sound_key_schoolBooks"></audio>
+                    <audio src="./audios/school/case.mp3" id="sound_key_schoolCase"></audio>
+                    <audio src="./audios/school/eraser.mp3 " id="sound_key_schoolEraser"></audio>
+                    <audio src="./audios/school/notebook.mp3 " id="sound_key_schoolNotebook"></audio>
+                    <audio src="./audios/school/pencil.mp3 " id="sound_key_schoolPencil"></audio>
+                    <audio src="./audios/school/pens.mp3 " id="sound_key_schoolPens"></audio>
+                    <audio src="./audios/school/rules.mp3 " id="sound_key_schoolRules"></audio>
+                    <audio src="./audios/school/scissors.mp3 " id="sound_key_schoolScissors"></audio>
+                </div>
+            </div>
+    
+          </div>
+
+
+          <!--Boton welcome/description audios -->
+        <audio src="./audios/animals.mp3 " id="sound_key_descAnimals"></audio>
+        <audio src="./audios/body.mp3 " id="sound_key_descBody"></audio>
+        <audio src="./audios/clothing.mp3 " id="sound_key_descClothes"></audio>
+        <audio src="./audios/colors.mp3 " id="sound_key_descColors"></audio>
+
+        <audio src="./audios/food.mp3 " id="sound_key_descFood"></audio>
+        <audio src="./audios/home.mp3 " id="sound_key_descHome"></audio>
+        <audio src="./audios/professions.mp3 " id="sound_key_descProfessions"></audio>
+        <audio src="./audios/school.mp3 " id="sound_key_descSchool"></audio>
+        <audio src="./audios/welcome.mp3 " id="sound_key_descWelcome"></audio>
+              
+    </main>
+    
+    <footer class="background-blue py-5">
+        <div class="container d-md-flex">
+            <div class="d-flex flex-column justify-content-center w-100 py-5 order-md-2">
+                <h2 class="display-5 color-blue-light">¡Tu opinión es mi <span class="display-3 color-blue-middle">Brújula</span>!</h2>
+                <p class="lead text-white mb-4">Contáctame y ayúdame a mejorar esta experiencia de aprendizaje</p>
+                <div class="mb-5 mb-md-0">
+                    <button onclick="window.open('https://www.linkedin.com/in/carolina-gonzalez-martin/', '_blank')" class="btn btn-test me-2"><i class="bi bi-linkedin"></i> LinkedIn</button>
+                    <button onclick="window.open('https://github.com/Carolina0709', '_blank')"  class="btn btn-test"><i class="bi bi-github"></i> Github</button>
+                </div>
+            </div>
+            <div class="w-100 d-flex justify-content-center align-items-center py-4 order-md-1">
+                <img class="w-100 img-footer" src="./images/crab.png" alt="Ilustración de cangrejo">
+            </div>
+        </div>
+        <div class="contianer w-100 d-flex justify-content-center">
+            <p class="lead fs-6 color-blue-light"><i class="bi bi-c-circle"></i> Made by Carolina González - 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
