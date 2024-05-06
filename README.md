@@ -44,4 +44,5 @@ TideTalk es una plataforma interactiva diseñada para mejorar tus habilidades en
 
 ## Link de acceso 
 
-[Accede al proyecto aquí](https://carolina0709.github.io/TideTalk/){:target="_blank"}
+<a href="https://carolina0709.github.io/TideTalk/" target="_blank">Accede al proyecto aquí</a>
+
